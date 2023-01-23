@@ -1,0 +1,38 @@
+/* li {
+  list-style: none;
+} */
+
+ol {
+  list-style: none;
+}
+
+body h1 {
+  text-decoration: underline;
+  font-size: 50px;
+  color: rgb(109, 255, 80);
+  padding: 20px;
+  margin: 20px 0;
+  border: 5px;
+  background-color: black;
+  border-radius: 75px;
+}
+h2 {
+  font-size: 50px;
+  color: rgb(207, 184, 250);
+  padding: 16px;
+  margin: 32px;
+  /* background-color: rgb(0, 162, 255); */
+  /* border-radius: 6px; */
+}
+li {
+  padding: 16px;
+  margin: 32px;
+  background-color: rgb(0, 0, 255);
+  border-radius: 6px;
+}
+
+
+.highlight_goal {
+  
+  background-color: rgb(101, 101, 255)
+}

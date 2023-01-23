@@ -1,0 +1,108 @@
+day1 
+16/1/23
+
+learnt what html, css and javascript are.
+html tag opening and closing
+element names
+header tag
+paragraph tag
+properties of text fonts, clours and alignment
+
+ended on vid 21
+==================================================================================================
+day2 
+17/1/23
+
+installed prettier plugin for vs code and how to use auto format shortcut (shift+alt+F)
+chrome dev tools
+edit index on the fly
+using <P></P> for line breaks
+making links to external resources
+using anchor tag <a></a> and href= attributes
+using nested elements anchor tag<a> inside paragraph tag<p>
+using style element <style> with css rules/global rules
+CSS selector "p" for type, all paragraph elements have properties between {}
+p {
+    font-family: sans-serif;
+    text-align: center;
+}
+The selector (p in the above example) and the opening curly brace typically go into the same line
+You then have one CSS property + its value per line
+Every line MUST end with a semi-colon
+The lines are indented (automatically, via the "Format Document" shortcut or because you pressed TAB)
+
+The closing curly brace goes into a separate line, with no indentation
+making code more readable, less elements
+using meta info for the browser not visable to the user, seperating the 2 using <head> and <body>
+adding <title>
+setting <!DOCTYPE html>
+using tab or enter for autocomplete
+moving text around using alt+up or down once selected
+added comments <!-- html comments--> for html and  /* css comments */ for css
+
+ended on vid 32
+=================================================================================================
+day3
+
+edited links using the a style, added underline whn hovering over link using text-decoration also changed colour of link using tyle atributes for <a>
+styles can overide each other and inherit preious styles from <p>
+added styles to seperate *.css file in same directory and linked it to the html file using link element and href <link rel="stylesheet" href="andys-styles.css" />
+used rel (relation ) atribute
+used the network tab in dev tools to see what files are being used (andys-styles.css)
+used id on html elements <p id="todays-challenge"> addec css rule to andys-styles
+changed font size using pixels px to make it absolute value for different resolutions
+added fonts from google fonts to html file using links
+used fallback fonts (font-family: "Anton", sans-serif) sans-serif will be applied if googlefonts is offline etc.
+added image to html using img, chenged size using width and height in pixels, put it in circle using border
+centered image by centering content in the body tag, img is void element therefore has no content, img is content of body so can be centered
+targeted the higher level/parent to center image
+removed text align from h1 and p since it is already used in parent, body
+
+ended on vid 45
+=================================================================================================
+day 4
+
+added 2nd html file to show rest of week tasks
+set css styles for full_week.html
+used ! to make skeleton template with meta data added
+linked to full_week.html from the index.html file
+shared css file across multiple html files
+tidied up directory, made images and style sheets folders, linked to new paths in css an html
+because matrix.png was in a css file to set background, the path had to be changed since computer aws looking in stylesheets/images instead of images, .. was used to state that ../images/matrix.png was in the root directory.
+installed live dev server plugin
+
+ended on vid 52
+=================================================================================================
+day 5
+Made github account and uploaded files
+created lists from paragraphs <p>, ordered lists <OL> an <UL> unordered lists
+used list-style withing the lists
+used inspect to see how the properties hierarchy works within nesting
+used box model in css with margins borders and background colours within <h> or <a>
+padding can be used top, right, bottom and left px to make square round text
+border can be size and property of 
+linemargin can have left and right properties
+used padding to make page look better and centered list correctly using margins
+structured html file correctly to make easier to read, header, h1,a,header. main,P
+using the class selector, can be used for multiple elements
+using decendent combinators (similar to #element targets) and setting rules to ancestors, parents and childs eg. body h1 {} can be used to set parameters of h1(s) within body, used to target specific paragraphs etc.
+combinators (body p etc) should be used rather then #targets
+added headings and paragraphs to the ordered lists to enable use of combinators
+
+lost some data
+
+ended on vid 62
+=================================================================================================
+day6
+
+re-did lost data
+
+.stlyes overrides combinators 
+block elements and inline elemnts <p> block elements occupies entire width of page
+inline elemnts <p><a></p> adds inline elment into block elements
+block creates newline across width of page
+inlne doesnt create new line or go full width
+inline elements <a> <button> <img> <span>
+
+ended on vid 65
+=================================================================================================
