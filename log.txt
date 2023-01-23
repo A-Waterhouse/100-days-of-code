@@ -103,6 +103,7 @@ inline elemnts <p><a></p> adds inline elment into block elements
 block creates newline across width of page
 inlne doesnt create new line or go full width
 inline elements <a> <button> <img> <span>
+pushed files to git from within vs code
 
 ended on vid 65
 =================================================================================================
