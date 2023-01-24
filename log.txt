@@ -111,5 +111,7 @@ day 7
 used margins and padding to set out page, understanding collapsing margins
 learnt which margins are ignored, only affect vertical margins, adjacent elements, biggest margin is used
 added box shadow (x offset, y offset, blur radius,colour)
-tried the test/challenge
+tried the test/challenge, did it a different way but worked out the same.
 
+ended on vid 73
+=================================================================================================
