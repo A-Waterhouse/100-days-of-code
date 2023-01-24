@@ -8,3 +8,15 @@ margin: 50px;
   font-weight: bold;
   font-size: 50px;
 }
+
+a2{
+  background-color: brown;
+  padding: 150px 75px;
+  border-radius: 30px;
+  font-family: "Anton", sans-serif;
+ 
+border: 50px;
+  font-size: 50px;
+  display: block;
+
+}

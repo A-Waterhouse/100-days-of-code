@@ -107,3 +107,9 @@ pushed files to git from within vs code
 
 ended on vid 65
 =================================================================================================
+day 7
+used margins and padding to set out page, understanding collapsing margins
+learnt which margins are ignored, only affect vertical margins, adjacent elements, biggest margin is used
+added box shadow (x offset, y offset, blur radius,colour)
+tried the test/challenge
+

@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  /* background-image: url(../images/matrix.png);
+    background-size: 100vw 100vh; */
+  background-color: rgb(186, 219, 248);
+  margin: 50px;
+}
+
+/* main{
+    width: 800px;
+    margin: 200px auto 72px auto;
+    background-color: blue;
+    padding: 24px;
+} */
+
+img {
+  width: 200px;
+  height: 200px;
+  /* border-style: solid; */
+  border-radius: 100px;
+  /* border-color: black; */
+  border: 5px solid rgb(0, 0, 0);
+  margin: -450px auto 50px auto;
+  display: block;
+  box-shadow: 5px 5px 8px rgb(0, 0, 0);
+}
+h1 {
+  padding: 150px 25px 25px 25px;
+  display: inline-block;
+  color: blueviolet;
+  margin: 150px auto 50px auto;
+  /* border: 50px; */
+  /* border-style: solid;*/
+  border-radius: 10px; 
+  box-shadow: 5px 5px 8px rgb(0, 0, 0);
+  border: 5px solid rgb(0, 0, 0);
+}
+
+span {
+  color: cadetblue;
+}
+
+/* p{
+    padding-top: 200px;
+} */
+
+footer{
+    margin-top: 250px;
+}
