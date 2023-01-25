@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  /* background-image: url(../images/matrix.png);
+    background-size: 100vw 100vh; */
+  background-color: rgb(186, 219, 248);
+  margin: 50px 400px 50px 400px;
+}
+img {
+  margin: 50px auto 50px auto;
+  height: 40%;
+  width: 40%;
+}
+
+a1 {
+  margin: 50px auto 50px auto;
+  font-size: 50px;
+}
+
+ol{
+    list-style: none;   text-align: left;
+  margin: 50px 50px 50px 50px;
+  padding: 20px;
+  background-color: chocolate; border-radius: 10px;
+}
+h1 {
+
+  border: 50px;
+ 
+ 
+}
