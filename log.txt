@@ -43,6 +43,7 @@ added comments <!-- html comments--> for html and  /* css comments */ for css
 ended on vid 32
 =================================================================================================
 day3
+18/1/23
 
 edited links using the a style, added underline whn hovering over link using text-decoration also changed colour of link using tyle atributes for <a>
 styles can overide each other and inherit preious styles from <p>
@@ -61,6 +62,7 @@ removed text align from h1 and p since it is already used in parent, body
 ended on vid 45
 =================================================================================================
 day 4
+19/1/23
 
 added 2nd html file to show rest of week tasks
 set css styles for full_week.html
@@ -74,6 +76,8 @@ installed live dev server plugin
 ended on vid 52
 =================================================================================================
 day 5
+20/1/23
+
 Made github account and uploaded files
 created lists from paragraphs <p>, ordered lists <OL> an <UL> unordered lists
 used list-style withing the lists
@@ -94,6 +98,7 @@ lost some data
 ended on vid 62
 =================================================================================================
 day6
+22/1/23
 
 re-did lost data
 
@@ -106,8 +111,11 @@ inline elements <a> <button> <img> <span>
 pushed files to git from within vs code
 
 ended on vid 65
+
 =================================================================================================
 day 7
+23/1/23
+
 used margins and padding to set out page, understanding collapsing margins
 learnt which margins are ignored, only affect vertical margins, adjacent elements, biggest margin is used
 added box shadow (x offset, y offset, blur radius,colour)
@@ -115,3 +123,31 @@ tried the test/challenge, did it a different way but worked out the same.
 
 ended on vid 73
 =================================================================================================
+day 10 & 11
+26&27/1/23
+
+note for what tutor did different
+
+made page from picture, day9.html
+block elements use full width of browser, dont allow elements next to them, uses line break
+inline allows elements next to each other, doesnt use line break
+use width property to keep ratio of image
+img should be within header element
+should use h1 instead of a, and h2 instead of h1
+h1 should not be nested in OL
+ul was used instead of OL
+set style within main instead of OL
+margin left right auto wil center block elements
+border left was used instead of box shadow in the ul to higlight some points
+span was used to make word bold instead of b
+keep tag and class selectors together and organised in the css file
+tutor used a:hover, a:active to change link to style link so it looks like button and changes colour when hovered over
+target property can be used to open link in new tab target=_blank
+
+
+<em> or <strong> element can be used to highlight words which are read out of blind people <strong> makes it bold
+<section> element is used to make code easier to read
+
+ended on vid 87
+=================================================================================================
+
