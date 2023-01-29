@@ -150,4 +150,9 @@ target property can be used to open link in new tab target=_blank
 
 ended on vid 87
 =================================================================================================
+day 12
+29/1/23
 
+hosted site @ https://andyswebsite.netlify.app/index.html
+linked to githib
+when github is updated, hosted site is updated
