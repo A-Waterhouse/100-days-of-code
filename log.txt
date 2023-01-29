@@ -156,3 +156,9 @@ day 12
 hosted site @ https://andyswebsite.netlify.app/index.html
 linked to githib
 when github is updated, hosted site is updated
+added favicon to the site
+
+ended on vid 93
+=================================================================================================
+
+
