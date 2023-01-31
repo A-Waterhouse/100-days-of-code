@@ -166,10 +166,25 @@ day 13
 skipped github section as already set up
 
 made new travel goals page
-learned about flex box and the default values
+setup skelton and structure
+learned about flex box and the default values used to move text about in the header etc.
+
 
 ended on vid 121
 =================================================================================================
+day 14
+31/1/23
+
+learned more about flex boxrelative and absolute positioning
+used positioning to move content by number of pixels
+used position fixed to keep elements in same place, can be used for menus
+added background image to site, made it centered and scaled correctly
+
+ended on vid 129
+=================================================================================================
+
+
+
 
 
 
