@@ -182,8 +182,16 @@ added background image to site, made it centered and scaled correctly
 
 ended on vid 129
 =================================================================================================
+day 15
+1/2/23
 
-
+finished off the header, moved it infront of image using position: absolute; atribute
+structured highlights section using sections and containers
+added images of destinations
+styled the destinations using flex
+used width 100% in reference to parent container
+learnt how to resize images correctly
+used object fit cover property to keep aspect ratio
 
 
 
