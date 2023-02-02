@@ -193,6 +193,8 @@ used width 100% in reference to parent container
 learnt how to resize images correctly
 used object fit cover property to keep aspect ratio
 
+ended on video 136
+=================================================================================================
 
 
 
