@@ -195,6 +195,18 @@ used object fit cover property to keep aspect ratio
 
 ended on video 136
 =================================================================================================
+day 16
+2/2/23
 
+learnt how to control margins within parents (collapsing margins)
+used gradient background colour (background: linear-gradient(45deg, rgb(227,255,253),rgb(202 , 243, 240));)
+used flexbox an borders to style page
+made new css and html for places page, used the same header, and footer
+used position static atribute
+learned about overiding rules within the html file depending on the position, above or below
+used overflow property to change images so they fit in the borders of the container
+worked on challege to style cards like tutors
 
+ended on video 147
+=================================================================================================
 
