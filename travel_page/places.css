@@ -20,7 +20,7 @@ header a {
 
 
 main ul {
-  width: 1200px;
+  width: 900px;
   margin: 0 auto 48px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
