@@ -226,6 +226,15 @@ used symbol  &#x2192 to add arrow to "text"
 
 finished on video 155
 =================================================================================================
+day 18
+8/2/23
 
+started to learn about responsive web design which changes depending on device used
+did challenge to make page like on in video 160
+made page look same using skills learnt in previous videos
+will check against tutors solution to see what can be improved
+
+finished on video 161
+=================================================================================================
 
 
