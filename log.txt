@@ -245,7 +245,20 @@ he used grid instead of flex
 leared about pixel scales and problems it can cause with user settings
 pixels are unscalable
 learned about % em and rem for font sizing
+% relative to parent element size
+em relative to font size
+rem relative to elements root font size
+enabling users to change font size in browser
 
+when % is used for padding etc then it takes results from parent value, if no parent value it can take it from width
+when em is used for paddding etc it takes results from parent value, if no parent value it can take it from font size
+rem will do same but take result from root font size
+em and rem always relate to font size
+use rem for fonts and mix of rem and % px for other properties
 
+changed values in tutors solution page to rem etc...
+page fonts now respond correctly to resizing for different devices
+left borders in px as they should not scale with page size
 
-
+finished on video 170
+=================================================================================================
