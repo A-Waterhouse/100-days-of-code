@@ -236,5 +236,16 @@ will check against tutors solution to see what can be improved
 
 finished on video 161
 =================================================================================================
+day 19
+9/2/23
+
+compared my attempt with tutors
+he used grid instead of flex
+
+leared about pixel scales and problems it can cause with user settings
+pixels are unscalable
+learned about % em and rem for font sizing
+
+
 
 
