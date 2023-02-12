@@ -262,3 +262,21 @@ left borders in px as they should not scale with page size
 
 finished on video 170
 =================================================================================================
+day 20
+12/2/23
+
+used media queeries to change behavior based on width of device in px
+using @media (max-width: 768px) {
+to change site from 2 columns to 1 column under 768 px (mobile phones)
+@ media works best at the bottom of the css file so it gets executed last 
+added hamburger icon to mobile view using spaced flex columns 
+open a side draw once icon clicked side draw covers entie page
+close side draw when clicked again
+using internal links to different parts of the site
+target selector activating css rules when selected
+used href id selector to jump to part of existing site
+clicking burger icon jumps to part of site
+used .html# to bring page back to being visable
+
+
+
