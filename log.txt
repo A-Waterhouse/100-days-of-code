@@ -280,4 +280,38 @@ used .html# to bring page back to being visable
 
 finished on video 182
 =================================================================================================
+day 21
+12/2/23
+
+videos about tips to make site styled well
+keep content centered
+give centent space 
+group elements with similar information together
+
+give bigger font weights to titles and key information
+bigger size fonts for titles and key info
+try to use only 2 fonts, 1 serif and 1 sans serif
+
+colours, use grey for background colour, pure black looks unatural for text also use grey tones
+changes focus for titles and sub headers
+use a primary colour for theme gives website identity
+an accent colour can be used to highlight
+presets can be used, css variables, must be placed in html {} in css
+--color-grey-100: rgb(236, 236, 236);
+background-color: var(--color-grey-100);
+predefined scales can be changed all at once
+can be used for font sizes etc... var(var--size-1)
+varables only available for elements which are nested within that elements (html holds all elements)
+
+use transformations and transitions, eg transform: scale (2);
+transformations can be used in hover states
+transitions should be used in default states, eg transition: transform 0.5s ease-out 1s;
+can be used for colours, font sizes etc...
+
+finished on video 194
+=================================================================================================
+
+
+
+
 
