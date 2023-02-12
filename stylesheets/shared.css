@@ -3,7 +3,7 @@ body {
   text-align: center;
   /* background-image: url(../images/matrix.png);
   background-size: 100vw 100vh; */
-  background-color: rgb(186, 219, 248);
+  background-color: rgb(107, 186, 255);
 }
 img {
   width: 200px;
@@ -16,14 +16,14 @@ img {
 
 #todays_challenge {
   font-family: "Lilita One", cursive;
-  color: rgb(230, 207, 7);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 50px;
 }
 
 p {
   font-family: "Lilita One", cursive;
-  color: rgb(230, 207, 7);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 50px;
 }
