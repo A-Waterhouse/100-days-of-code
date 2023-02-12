@@ -278,5 +278,6 @@ used href id selector to jump to part of existing site
 clicking burger icon jumps to part of site
 used .html# to bring page back to being visable
 
-
+finished on video 182
+=================================================================================================
 
