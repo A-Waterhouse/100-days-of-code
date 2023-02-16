@@ -310,6 +310,38 @@ can be used for colours, font sizes etc...
 
 finished on video 194
 =================================================================================================
+day 22
+16/2/23
+
+intro to forms/input into websites
+importnat html elements .... 
+
+<input type=""> type is text, numbers, email etc..
+<textarea> multiline text input fields
+<select> used for dropdown options
+<button> confirming inputs/submitting form/reseting form
+
+input can be styled in the css file
+<form> elemnt must be added to make functional
+action atribute sends data to path set (website or database/server)
+method atribute chooses type of http request sent to server(GET and POST)
+GET tell browser to receive data, data is now part of url separated by &
+POST tell browser to store data, data will be meta data
+
+backend server needs to be set up to use either GET or POST
+
+use <lable> to title form inputs
+input must have id <input id/> to link label to using <label for="">
+allows to click on title of input to focus on input
+
+used font:inherit to override browser deault style in the button css, inherit from body
+
+used input:focus to change properties of the input box
+used cursor: pointer; whn over button to change cursor to hand 
+
+finished on video 203
+=================================================================================================
+
 
 
 
