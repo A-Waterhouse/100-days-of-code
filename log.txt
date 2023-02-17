@@ -342,8 +342,22 @@ used cursor: pointer; whn over button to change cursor to hand
 finished on video 203
 =================================================================================================
 
+day 23
+17/2/23
 
+learned about different types of inputs, eg text (default), email, number, password, date, radio buttons, checkbox, file.
+different inputs allow for different keyboards and other properties (special keyboards, vaildation)
+<input type="number" step="5" name="user-age" id="userage"> step can be used to skip numbers using the arrows
 
+help user and gives them better experience
 
+used <hr> to add horizontal line to the form
 
+radio buttons must have same name to group them together so only 1 can be picked
+value is used to pre enter data in forms
+value in radio buttons is used for machine readable value
 
+learned about dropdowns, check boxes and how data is sent to servers using value
+
+finished on video 211
+=================================================================================================
