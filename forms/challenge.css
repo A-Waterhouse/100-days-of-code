@@ -1,29 +1,30 @@
 body {
-  background-color: rgb(31, 30, 30);
-  font-family: "Roboto", sans-sarif;
+  background-color: rgb(231, 229, 229);
+  font-family: "impact", sans-sarif;
 }
 
-h1{
-    text-align: center;
-    color: white;
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
-
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 form {
   width: 30rem;
   margin: 3rem auto;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(244, 255, 255);
   padding: 1rem;
   border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 label {
   margin-bottom: 0.5rem;
+
   display: block;
 }
 input,
@@ -39,29 +40,30 @@ select {
   color: rgb(61, 58, 58);
 }
 
-textarea{
-    resize: none;
+textarea {
+  resize: none;
 }
 
 input:focus,
 textarea:focus {
-  background-color: rgb(219, 190, 253);
+  background-color: rgb(232, 246, 250);
   color: rgb(32, 5, 63);
 }
-button {
-  display: block;
+.buttons button {
+  display: inline-flex;
   font: inherit;
-  background-color: rgb(32, 5, 63);
-  color: white;
+  background-color: rgb(50, 103, 219);
+  color: rgb(228, 228, 228);
   border: 1px solid rgb(32, 5, 63);
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
+  position: relative;
+  left: 18rem;
 }
 
-button:hover {
-  background-color: rgb(52, 14, 95);
-  border-color: rgb(52, 14, 95);
+.buttons button:hover {
+  background-color: rgb(50, 151, 219);
 }
 
 .form-control-inline {

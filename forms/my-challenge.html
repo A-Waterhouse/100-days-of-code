@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>My Form Challenge</title>
+    <link rel="stylesheet" href="challenge.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Contact Us</h1>
+      </header>
+      <form action="/forms/my-challenge.html" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                required
+                placeholder="Andy W"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your email address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                required
+                placeholder="something@email.com"
+              />
+            </li>
+            <li>
+              <label for="phonenumber">Your phone number</label>
+              <input
+                type="number"
+                name="phone-number"
+                id="phonenumber"
+                required
+                placeholder="###########"
+              />
+            </li>
+
+            <li>
+              <label for="usermessage">Your message</label>
+              <textarea
+                name=""
+                id="usermessage"
+                cols="15"
+                rows="5"
+                placeholder="your message here"
+              ></textarea>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <label for="findus">How did you find us?</label>
+              <select name="findus" id="findus">
+                <option value="Web">Web Search</option>
+                <option value="Friend">Friend</option>
+                <option value="Post">Post</option>
+              </select>
+            </li>
+          </ul>
+          <h2>How should we contact you?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text-msg"
+                value="text-msg"
+              />
+              <label for="verify-text-msg">Via text msg</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phone"
+                value="phone"
+              />
+              <label for="verify-phone">Via phonecall</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="email"
+                required
+              />
+              <label for="verify-email">Via an email</label>
+            </li>
+          </ul>
+        </section>
+        
+        <section>
+          <ul>
+            <div class="form-control-inline">
+              <input type="checkbox" name="terms" id="agree-terms" required />
+              <label for="agree-terms">Agree to terms</label>
+            </div>
+          </ul>
+        </section>
+
+        <section>
+            <div class="buttons">          
+              <button type="reset">Clear</button>
+              <button type="submit">Submit</button>
+            </div>
+                  </section>
+      </form>
+    </main>
+  </body>
+</html>

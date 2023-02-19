@@ -359,5 +359,39 @@ value in radio buttons is used for machine readable value
 
 learned about dropdowns, check boxes and how data is sent to servers using value
 
+grouped forms inputs into sections and lists to tidy up the code
+
 finished on video 211
 =================================================================================================
+
+day 24
+19/2/23
+
+learned about validation on forms and adding novalidate attribute to form to override
+added atribute required to input to make sure something is typed in
+added atribute required to password to enable minlength
+attribute added to age min and max to make min age required
+for date required min="1921-01-01" max="2003-01-01" must be in that format yyyy-mm-dd
+date will now be restricted to those dates 
+
+required can be used on radio buttons
+enables warning in forms for missing data
+
+placeholder atribute is used to add greyed out text into box, differs from value since value is like user typed it, can be used as hint 
+
+risize handle on message box can be disabled in css so design stays how you want it 
+textarea{
+    resize: none;
+}
+can be used vertically or horizontaly
+
+attempted challenge using leared skills, worked out OK but buttons were aligned differently
+
+finished on video 218
+=================================================================================================
+
+
+
+
+
+

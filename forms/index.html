@@ -25,15 +25,15 @@
           <ul>
             <li>
               <label for="username">Your name</label>
-              <input type="text" name="user-name" id="username" />
+              <input type="text" name="user-name" id="username" required placeholder="Andy W"/>
             </li>
             <li>
               <label for="useremail">Your email address</label>
-              <input type="email" name="user-email" id="useremail" />
+              <input type="email" name="user-email" id="useremail" required/>
             </li>
             <li>
               <label for="userpassword">Your password</label>
-              <input type="password" name="user-password" id="userpassword" />
+              <input type="password" name="user-password" id="userpassword" required minlength="8"/>
             </li>
           </ul>
         </section>
@@ -43,11 +43,11 @@
           <ul>
             <li>
               <label for="userage">Your age</label>
-              <input type="number" step="1" name="user-age" id="userage" />
+              <input type="number" step="1" name="user-age" id="userage" required min="18" max="120"/>
             </li>
             <li>
               <label for="birthdate">Your birthdate</label>
-              <input type="date" id="birthdate" name="user-birthdate" />
+              <input type="date" id="birthdate" name="user-birthdate" required min="1921-01-01" max="2003-01-01"/>
             </li>
             <li>
               <label for="fave-colour">Fave colour</label>
@@ -92,6 +92,7 @@
                 name="verify"
                 id="verify-email"
                 value="email"
+                required
               />
               <label for="verify-email">Via an email</label>
             </li>
