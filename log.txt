@@ -390,7 +390,112 @@ attempted challenge using leared skills, worked out OK but buttons were aligned 
 finished on video 218
 =================================================================================================
 
+day 25
+22/2/23
 
+learned about javascript, aded alerts and linked html file to external file using <script src="app.js"></script>
+used arrays using the [] brackets, elements seperated by commas and in quotation
+alert(hobbies[0]); displays 1st element of saved array
+used properties within objects let job = { title: "developer", place: "new york", salary: 50000 }; to keep object variables related
+like variables closed into that object
+alert(job.title); shows the requested properties within the object using the . character
+derived vaules from formulas and displayed output let adultYears = age - 18; alert(adultYears);
+used functions to store formular
+function calculateAdultYears (){
+    adultYears =  age - 18
+}
+calculateAdultYears();
+alert (adultYears);
+
+age = 19;
+ calculateAdultYears();
+alert (adultYears);
+
+finished on video 240
+=================================================================================================
+day 26
+23/2/23
+
+attempted excercise.js challenge 
+part 1 - 5 were done correct and worked
+part 5&6 were done differently but still worked, tutors had 2 less lines of code
+
+learned to put functions into an object called methods
+used console.log instead of alert
+
+made mathoperations.js file
+did some equations and displayed output in console
+whole numbers are integers
+numbers with decimals are floating point numbers or floats
+used modulus operator % shows remainder from division eg 10/4 is 4*2 with 2 remaining
+learned about linear equations using bodmas rules
+
+javascript calculates right side of = first
+result = result + 1; so result+1 can be calculated and stored as result
+can be writtern as result++ instead
+result-- can be used also to subtract 1
+result += 5; result = result + 5
+Exponentiation operator (i.e. replacement for age = 4 * 4 * 4)
+
++ can be used on stings also eg console.log("Andy" +" "+ "Waterhouse");
+
+console.log(userName.length); used to calculate length of string, can also count objects in array
+
+
+DOM section
+learnd about window console.log(window) so we can view information about opened tab
+DOM is Document Object model, the data representation of the parsed HTML code
+javascript can interact with it, extract an manipulate data
+
+used defer to delay loading of html until js is loaded
+
+document.body.children[1].children[0].href = 'http://www.google.com'; was used to change url from within the js file
+
+
+
+
+finished on video 260
+=================================================================================================
+day 27
+26/2/23
+
+learned about DOM tree and how it is similar to HTML
+drilled into document to find the DOM code document.body.children[1].children[0].href to get the path for js
+can use query elements to drill into the DOM may be an easier way to get the DOM address
+
+can live type into the console in dev tools to help drill intot he DOM using previews
+elements and text pieces are stored seperately in the DOM
+TEXT NODES the white space is part of the DOM read as text/spaces, first child nodes may be the white spaces
+
+document.body.firstElementChild accesses the h1 element
+or document.body.children[1] for <p> or [0] for <h1> in the example
+all depending on where elements are in the HTML code, if code changes the DOM address changes too
+
+changes layout and added new <p> element and id for the link, to use query function
+document.getElementById method
+let anchorElement = document.getElementById("external-link");
+anchorElement.href = "http://www.google.com";
+
+querySelector method can be used also
+anchorElement = document.querySelector("#external-link");
+anchorElement.href = "http://www.bbc.com";
+
+getElementById can only work if id given in the html code
+querySelector works on any css selector eg html type <a> same as in css, will always select the 1st matching element
+querySelectorAll will return all matching elements not just 1st
+
+document.getElementById('some-id'): Select a HTML element by its ID (selects only one element, since IDs should be unique)
+document.querySelector('<some-css-selector>'): Selects the first matching (!) HTML element that is met / selected by the provided CSS selector; The CSS selector can basically be any kind of valid CSS selector (e.g. ID selector, tag type selector, class selector, combined selectors etc.)
+document.querySelectorAll('<some-css-selector>'): Selects ALL matching HTML elements that are met / selected by the provided CSS selector
+
+There also are a few lesser used selection methods, that you also should've heard about:
+document.getElementsByClassName('some-css-class'): Selects all HTML elements that have the provided CSS class
+document.getElementsByTagName('tag'): Selects all HTML elements that are of the provided HTML tag type
+
+completed excercise to select variables via DOM and change text in HTML code via js and DOM
+
+finished on video 267
+=================================================================================================
 
 
 
