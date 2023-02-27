@@ -496,7 +496,46 @@ completed excercise to select variables via DOM and change text in HTML code via
 
 finished on video 267
 =================================================================================================
+day 28
+27/2/23
+
+learnt how to add element from the .js script
+********************************// add an Element
+// 1. create the new Element
+//document.createElement("a"); //element created and stored in memory
+let newAnchorElement = document.createElement("a");
+
+// 2. get access to the parent element that shoule hold the new element
+let firstParagraph = document.querySelector("p");
+
+// 3. insert new element into the parent element content
+firstParagraph.append(newAnchorElement);
+
+added content to the <a> element using 
+newAnchorElement.href = "http://www.google.com";
+newAnchorElement.textContent = "leads to google";
+
+can be used to remove elements//remove elements
+
+************************************// 1. select element to remove
+let firstH1Element = document.querySelector("h1");
+
+// 2. remove it
+
+firstH1Element.remove();
+
+******************************************//move elements
+firstParagraph.parentElement.append(firstParagraph);
+
+//select parent of the place where it should be inserted and use append or insetBefore()
 
 
+*****************************************//innerHTML
 
+console.log(firstParagraph.innerHTML); //mix of text and HTML code
 
+firstParagraph.innerHTML = "Hi! this is <strong>important</strong>";
+
+finished on vodeo 273
+
+=================================================================================================
