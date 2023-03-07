@@ -539,3 +539,37 @@ firstParagraph.innerHTML = "Hi! this is <strong>important</strong>";
 finished on vodeo 273
 
 =================================================================================================
+day 29
+28/2/23
+
+learned how to make element responsive to click 
+let paragraphElement = document.querySelector("p");
+
+function changeParagraphText() {
+  paragraphElement.textContent = "clicked";
+}
+paragraphElement.addEventListener("click", changeParagraphText);
+
+using a callback function which is passed as a parameter value to another function to be executed in the future
+
+created a input text box and logged the inputted text
+let inputElement = document.querySelector("input");
+function retriveUserInput() {
+  let enteredText = inputElement.value;
+  console.log(enteredText);
+}
+inputElement.addEventListener("input", retriveUserInput);
+
+finished on video 277
+
+=================================================================================================
+day 30 
+7/3/23
+
+tried to get demo site without hints, managed to get the number counting down correctly
+had to watch solution video to get it correct
+had to use get element by id to select element in the html let productNameInputElement = document.getElementById("product-name");
+had to use maxlength attribute in the html <input type="text" id="product-name" name="product-name" maxlength="60">
+
+
+finished on video 278
