@@ -1,0 +1,87 @@
+window and document are built into js
+window holds info about the active browser window
+
+eg;
+console.log(window)
+
+views properties and methods (marked with (f))
+
+alert()
+window.alert()
+both lines do the same thing
+
+window.document displays info to the loaded website content
+allows manipulation of html code
+
+DOM document object model, data representation of the html code, translation to js from html
+js can extract and manipulate html code through the dom
+
+console.log(document) allows acces to the DOM
+
+console.dir(document) show javascript object properties
+
+document.body.children[1].children[0].href = "http://........ string"
+used to access the parts of the html and change an href link
+
+to stop js code running too early script can be moved to bottom of html code or used defer attribute
+
+DOM is like nested tree of HTML objects
+
+DOM elements can be drilled into (document.body.children[1].children[0])
+or queried (document.getElementById("some-id") & document.querySelector(".some-class"))
+queries can be used with any class/id selector and dont need to know exact path
+
+queries can be used with variables
+let element = document.getElementById("link-data")
+element.href = :https//somelink......."
+
+element = document.querySelector("#link-data") uses css selectors
+element.href = :https//somelink......."
+
+can use wither of the 2 selectors
+
+queries selector could be ("a") to select 1st anchor element etc ("p a") 
+querySelectorAll can also be used to select all anchors or paragraphs/other css properties
+
+can be used to manipulate elements, adding, removing or moving
+
+
+=======================================================================
+
+
+********************************// add an Element
+// 1. create the new Element
+//document.createElement("a"); //element created and stored in memory
+let newAnchorElement = document.createElement("a");
+
+// 2. get access to the parent element that shoule hold the new element
+let firstParagraph = document.querySelector("p");
+
+// 3. insert new element into the parent element content
+firstParagraph.append(newAnchorElement);
+
+added content to the <a> element using 
+newAnchorElement.href = "http://www.google.com";
+newAnchorElement.textContent = "leads to google";
+
+can be used to remove elements//remove elements
+
+************************************// 1. select element to remove
+let firstH1Element = document.querySelector("h1");
+
+// 2. remove it
+
+firstH1Element.remove();
+
+******************************************//move elements
+firstParagraph.parentElement.append(firstParagraph);
+
+//select parent of the place where it should be inserted and use append or insetBefore()
+
+
+*****************************************//innerHTML
+
+console.log(firstParagraph.innerHTML); //mix of text and HTML code
+
+firstParagraph.innerHTML = "Hi! this is <strong>important</strong>";
+

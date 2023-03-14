@@ -571,5 +571,50 @@ had to watch solution video to get it correct
 had to use get element by id to select element in the html let productNameInputElement = document.getElementById("product-name");
 had to use maxlength attribute in the html <input type="text" id="product-name" name="product-name" maxlength="60">
 
+need to watch from video 276 to understand events better
+went back to beginning and made jsnotes.txt 
+
 
 finished on video 278
+=================================================================================================
+day 31
+8/3/23
+
+re watched videos 253 - 275 and made jsnotes.txt to understand it better
+
+=================================================================================================
+day 32
+14/3/23
+
+video 278
+
+variable and constants
+variables can be changed 
+
+let enteredvalue = hi
+enteredvalue = bye
+
+constants never change 
+const enteredvalue = hi
+
+good practice to use const
+
+const can change property values within a function but the overall const can not
+
+used spanElement.className = "warning" in console to overide class name
+
+spanElement.classList.add() or .remove to add/remove class to existing class, still keeps original class name
+
+started excercise-2
+
+completed excercise 2 and got it working.
+
+will check against solution
+mine was OK
+
+finished on video 284
+=================================================================================================
+
+
+
+

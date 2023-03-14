@@ -1,14 +1,17 @@
-let productNameInputElement = document.getElementById("product-name");
-let remaingCharsElement = document.getElementById("remaining-chars");
+const productNameInputElement = document.getElementById('product-name');
+const remainingCharsElement = document.getElementById('remaining-chars');
 
-let maxAllowedChars = productNameInputElement.maxLength;
+// console.dir(productNameInputElement);
 
-function updateRemainingCharaters(event) {
-  let enteredText = event.target.value;
-  let enteredTextLength = enteredText.length;
+const maxAllowedChars = productNameInputElement.maxLength;
 
-  let remainingCharaters = maxAllowedChars - enteredTextLength;
-  remaingCharsElement.textContent=remainingCharaters;
+function updateRemainingCharacters(event) {
+  const enteredText = event.target.value;
+  const enteredTextLength = enteredText.length; 
 
+  const remainingCharacters = maxAllowedChars - enteredTextLength;
+
+  remainingCharsElement.textContent = remainingCharacters;
 }
-productNameInputElement.addEventListener("input", updateRemainingCharaters);
+
+productNameInputElement.addEventListener('input', updateRemainingCharacters);
