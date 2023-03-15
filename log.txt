@@ -614,6 +614,70 @@ mine was OK
 
 finished on video 284
 =================================================================================================
+day 33
+15/3/23
+
+learnd about if statements and boolean values (true or false)
+true executes if stament, false dows not
+booleans are derived from comparison operators and combined from logical operators
+
+comparison ==,=== ,      >,<,>=,<=            !,!=,!==
+          equality       greater than etc.    inverse operators
+
+logical   &&              ||
+          and             or
+
+
+== compares values 
+=== compares value type, stings and numbers not being the same
+letters are assigned numbers to compare
+
+and operators both have to be true or false to get result
+or operators only 1 has to be right
+ && is prioratised when calculating
+ () are calculated 1st
+
+ added 
+
+
+ if (remainingCharacters <= 10){
+
+  productNameInputElement.classList.add ("warning");
+  remainingCharsElement.classList.add ("warning");
+
+}
+if (remainingCharacters > 10){
+
+  productNameInputElement.classList.remove  ("warning");
+  remainingCharsElement.classList.remove ("warning");
+}
+
+too make realistic demo/demo.js work as intended
+
+will check solution
+tutor used else statement instead of 2nd if statement, not been told about that
+worked the same
+made new class for zero characters
+added else if and else statements to add and remove classes
+
+
+  if (remainingCharacters === 0) {
+    productNameInputElement.classList.add("error");
+    remainingCharsElement.classList.add("error");
+  } else if (remainingCharacters <= 10) {
+    productNameInputElement.classList.add("warning");
+    remainingCharsElement.classList.add("warning");
+    productNameInputElement.classList.remove("error");
+    remainingCharsElement.classList.remove("error");
+  } else {
+    productNameInputElement.classList.remove("warning");
+    remainingCharsElement.classList.remove("warning");
+  }
+
+finished on video 291
+=================================================================================================
+
+
 
 
 
