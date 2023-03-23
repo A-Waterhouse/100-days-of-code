@@ -677,8 +677,109 @@ added else if and else statements to add and remove classes
 finished on video 291
 =================================================================================================
 
+day 34
+23/3/23
+
+learnd aboutstoring booleans in variables and how to name them 
+
+let isLoggedIn = true;
+
+if (!isLoggedIn) {
+  console.log("user is NOT logged in");
+}
+
+truthy and falsy values are used, js tries to convert values into boolean, empty string or number 0 will be trated as false 
+shorter than checking for length >=0
+
+loops are used to execute code multiple times
+
+for               loop n number of times code is executed  
+for...of          loop through elements of an array
+for...in          loop through all properties of an object
+while             loop as long as certain condition is met
+
+for...of and for...in are used frequently
+
+example of for loop
+for (let i=0;i<10;i++){
+console.log(i)
+}
+
+i will be incremented by 1 after every loop iteration, keeps going aslong as i is less than 10
+
+could be i+2
+
+for (must be let i = value ; looping condition dfining how long it should run; how i should chang in every iteration)
+
+example of 'for of' loop
+
+const users = ["max", "anna", "joel"]
+
+for (const user of users ){
+console.log(user);
+
+}
+
+logged individual users in the array
+
+
+example of 'for in ' loop
+
+const loggedInUser={
+
+    name:"max",
+    age:32,
+    isAdmin:true
+};
+
+for (const key in loggedInUser){
+
+console.log(key);
+
+}
+
+example shows property name only and not the value
+
+console.log(loggedInUser[key])
+allows values to be accessed
+
+example of while loop
+
+let isFinished = false;
+while (!isFinished) {
+  isFinished = confirm("Do you want to quit?");
+}
+
+console.log("done");
+
+confirm box pops up and cancel is false value, true is OK
+
+loop keeps running until ok is pressed then done is logged
 
 
 
 
+// first example; sum numbers/for loop
+
+const calculateSumButtonElement = document.querySelector("#calculator button"); //selects 1st button within elementID "calculator"
+
+function calculateSum(){ //executes when button is clicked due to addeventlistener
+const userNumberInputElement = document.getElementById("user-number");  //only used in this function so just define in function
+const enteredNumber = userNumberInputElement.value; // gets value which is entered and stored
+
+let sumUpToNumber = 0; //starts at 0
+for (let i = 0; i <=enteredNumber; i++){ //runs until entered number is smaller or equal to entered number, then adds 1 to it
+    sumUpToNumber=sumUpToNumber + i; //gets 0 and adds 1 to it
+}
+
+const outputResultElement = document.getElementById("calculated-sum"); //accesses paragraph 
+outputResultElement.textContent = sumUpToNumber; //changes text content to result derived
+outputResultElement.style.display = "block"; //in the css the style of calculated-sum was hidden, this changes it to visable
+}
+
+calculateSumButtonElement.addEventListener("click", calculateSum); //checks for click event then points to function once clicked
+
+finished on video 299
+
+=================================================================================================
 
