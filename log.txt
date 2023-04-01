@@ -892,3 +892,6 @@ rollDiceButtonElemnt.addEventListener("click", deriveNumberOfDiceRolls);
 
 while loop keeps executing code until parameters not met any more
 
+finished on video 304
+
+=================================================================================================
