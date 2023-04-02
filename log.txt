@@ -895,3 +895,10 @@ while loop keeps executing code until parameters not met any more
 finished on video 304
 
 =================================================================================================
+day 36
+2/4/23
+
+created and styled the html and css files for the naughts and crosses game, got about half way through
+finished on video 309
+
+=================================================================================================
