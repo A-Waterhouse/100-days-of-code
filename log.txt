@@ -910,5 +910,5 @@ started on the javascript file
 used multiple folders to add structure to the file system and keep it easy to work with
 used funtions to show and hide boxes using click events, learnd that a click event can also be executed on the backdrop
 
-finished on video 311
+finished on video 312
 =================================================================================================
