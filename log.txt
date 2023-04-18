@@ -912,3 +912,57 @@ used funtions to show and hide boxes using click events, learnd that a click eve
 
 finished on video 312
 =================================================================================================
+day 37
+18/4/23
+
+used document.querySelector("form"); since it was the only form in the HTML
+used new event listener addEventListener("submit") to execute function on submit
+default behavior of submitting data to the server has to be overiden since there is no server
+used event.preventDefault() , prevents page from reloading when submitting data in form which would restart the game
+used const formData = new FormData(event.target) to modify blueprint of the form used to extract values, works on named attributes
+const enteredPlayername = formData.get("playername"); was used to get and store the formdata from attribute named playername
+now enteredPlayername constant had data seved to it
+
+inputs must be validated
+.trim() used to get rid of spaces infront of input
+if (!enteredPlayername ) if not enteredPlayername is used to return boolean to execute code if empty string/false
+added new html element to show error message within the box 
+<p id="config-errors"></p> 
+then used getElementById to create a const
+then used errorsOutputElement.textContent = "Please enter a valid name!" to display a message
+return; is used to stop ecextion of code in the function once valid input has been verified
+
+used event.target.firstElementChild.classList.add("error"); to add a new class when error is detected so style can be changed
+added css code to use the new class
+
+editedPlayer variable was made to tell differnce between player 1 and 2 forms
+data-playerid="1" or "2" was used to label each player name
+editedPlayer = +event.target.dataset.playerid; number 1 or 2 was stored in the editedplayer variable
+
+added code to update info on the screen depending on what was entered in the form
+used const updatedPlayerDataElement = document.getElementById("player-" + editedPlayer + "-data") to dynamically construct the sting from the editedPlayer variable
+used updatedPlayerDataElement.children[1].textContent = enteredPlayername to select the 2nd child element and updated it with the user inputted data
+
+want to store the players name in the code, array is used
+const players = [
+  {
+    name: "",
+    symbol: "X"
+  },
+  {
+    name: "",
+    symbol: "O"
+  },
+];
+
+since arrays start at 0 and data sets start at 1, 1 must be minused off editedPlayer to match them up
+players[editedPlayer - 1]
+  players[editedPlayer - 1].name = enteredPlayername will store the name
+  closePlayerConfig(); is executed manually to close the form
+formElement.firstElementChild.lastElementChild.value = ""; is used to erase data in the form so the last entered name nolonger persists
+
+finished on video 315
+=================================================================================================
+
+
+
