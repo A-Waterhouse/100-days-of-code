@@ -963,6 +963,59 @@ formElement.firstElementChild.lastElementChild.value = ""; is used to erase data
 
 finished on video 315
 =================================================================================================
+day 38
+28/4/23
+
+added logic to hide the board and only show it if the playernames have been entered
+
+function startNewGame (){
+    if (players[0].name === "" || players[1].name === ""){     //used || for or operator
+        alert("Please set names for both players!");
+        return;
+    }
+    gameAreaElement.style.display = "block";
+
+}
+
+used if functions to switch between players using the arrays
+function switchPlayer() {
+  if (activePlayer === 0) {
+    activePlayer = 1;
+  } else {
+    activePlayer = 0;
+  }
+}
+
+used activePlayerNameElement.textContent = players[activePlayer].name; to switch the names on the board to display whos turn it is
 
 
+used 2d array to check for winner, an array with other arrays for values
 
+const gameData = [
+[0, 0, 0],
+[0, 0, 0],
+[0, 0, 0],
+]
+
+used data-col=1 data-row=1 to assign each list item in the array
+
+ <li data-col="1" data-row="1"></li>
+          <li data-col="2" data-row="1"></li>
+          <li data-col="3" data-row="1"></li>
+
+          <li data-col="1" data-row="2"></li>
+          <li data-col="2" data-row="2"></li>
+          <li data-col="3" data-row="2"></li>
+
+          <li data-col="1" data-row="3"></li>
+          <li data-col="2" data-row="3"></li>
+          <li data-col="3" data-row="3"></li>
+
+used to change values in the 2d array, array will be checked for adjacent 1 for player 1 or 2 for player 2 too see if there is a winner or not yet
+
+ const selectedColumn = selectedField.dataset.col;
+  const selectedRow = selectedField.dataset.row;
+is used to access the rows and columns
+
+finsihed on video 318
+=================================================================================================
