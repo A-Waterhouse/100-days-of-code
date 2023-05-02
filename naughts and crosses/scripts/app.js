@@ -1,20 +1,21 @@
 const gameData = [
-[0, 0, 0],
-[0, 0, 0],
-[0, 0, 0],
-]
+  [0, 0, 0],
+  [0, 0, 0],
+  [0, 0, 0],
+];
 
 let editedPlayer = 0;
 let activePlayer = 0;
+let currentRound = 1;
 
 const players = [
   {
     name: "",
-    symbol: "X"
+    symbol: "X",
   },
   {
     name: "",
-    symbol: "O"
+    symbol: "O",
   },
 ];
 

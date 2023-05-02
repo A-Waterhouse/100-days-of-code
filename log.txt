@@ -1019,3 +1019,92 @@ is used to access the rows and columns
 
 finsihed on video 318
 =================================================================================================
+day 39
+2/5/23
+
+saw how using if statements to check for winner woulc not be the best solution since it woulc have to have an if for every combination
+instead checked if 1st field  [0] [0] is owned by the 2nd field [0] [1] in the array and the 3rd field
+all fields in the 1st row will be owned by the same player
+also want to make sure field values are greater than zero since thats what they are at the beginning
+used 
+function checkForGameOver() {
+  if (
+    gameData[0][0] > 0 &&
+    gameData[0][0] === gameData[0][1] &&
+    gameData[0][1] === gameData[0][2]
+  ) {
+    return gameData[0][0];
+  }
+}
+since gameData also stores the players number/name
+
+used for loop to change the index of the array
+for(let i = 0; i < 3; i++){
+
+  function checkForGameOver() {
+  for (let i = 0; i < 3; i++) {
+    if (
+      gameData[i][0] > 0 &&
+      gameData[i][0] === gameData[i][1] &&
+      gameData[i][1] === gameData[i][2]
+    ) {
+      return gameData[i][0];
+    }
+  }
+}
+now the array index changes on every loop 
+
+function checkForGameOver() { //checking columns for equality
+  for (let i = 0; i < 3; i++) {
+    if (
+      gameData[0][i] > 0 &&
+      gameData[0][i] === gameData[1][i] &&
+      gameData[0][i] === gameData[2][i]
+    ) {
+      return gameData[0][i];
+    }
+  }
+}
+
+first go through all the rows and keep the columns fixed
+then go through all the columns but keep the rows fixed
+
+then checkd diagonals
+//diagonal top left to bottom right
+if (
+  gameData[0][0] > 0 &&
+  gameData[0][0] === gameData[1][1] &&
+  gameData[1][1] === gameData[2][2]
+) {
+  return gameData[0][0];
+}
+
+//diagonal bottom left to top right
+if (
+  gameData[2][0] > 0 &&
+  gameData[2][0] === gameData[1][1] &&
+  gameData[1][1] === gameData[0][2]
+) {
+  return gameData[2][0];
+}
+
+using all combinations of the array
+
+when there is a draw at 9 rounds
+
+let currentRound = 1; since we start in round 1
+
+if (currentRound === 9){
+    return -1;
+
+    using -1 to signify a draw
+
+
+currentRound++; is used to add 1 to the current round before switch player function
+
+
+information now needs to be outputted
+
+finsihed on video 319
+=================================================================================================
+
