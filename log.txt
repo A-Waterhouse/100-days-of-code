@@ -1108,3 +1108,11 @@ information now needs to be outputted
 finsihed on video 319
 =================================================================================================
 
+day 40 
+3/5/23
+
+finished off the game logic and got the browser based game working
+
+finsihed on video 321
+
+=================================================================================================

@@ -7,6 +7,7 @@ const gameData = [
 let editedPlayer = 0;
 let activePlayer = 0;
 let currentRound = 1;
+let gameIsOver = false;
 
 const players = [
   {
@@ -25,12 +26,14 @@ const formElement = document.querySelector("form");
 const errorsOutputElement = document.getElementById("config-errors");
 const gameAreaElement = document.getElementById("active-game");
 const activePlayerNameElement = document.getElementById("active-player-name");
+const gameOverElement = document.getElementById("game-over");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn"); // gets hold of the buttons
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
 const cancelConfigBtnElement = document.getElementById("cancel-config-btn");
 const startNewGameBtnElement = document.getElementById("start-game-btn");
-const gameFieldElements = document.querySelectorAll("#game-board li"); //selects all list items in the game-board ID
+//const gameFieldElements = document.querySelectorAll("#game-board li"); selects all list items in the game-board ID
+const gameBoardElement = document.getElementById("game-board");
 
 editPlayer1BtnElement.addEventListener("click", openPlayerConfig); //listens for click on mouse, then executes a function in config.js but config must be loaded before this file
 editPlayer2BtnElement.addEventListener("click", openPlayerConfig);
@@ -41,6 +44,8 @@ formElement.addEventListener("submit", savePlayerConfig);
 
 startNewGameBtnElement.addEventListener("click", startNewGame);
 
-for (const gameFieldElement of gameFieldElements) {
-  gameFieldElement.addEventListener("click", selectGameField);
-}
+// for (const gameFieldElement of gameFieldElements) {
+//   gameFieldElement.addEventListener("click", selectGameField);
+// }
+
+gameBoardElement.addEventListener("click", selectGameField);
