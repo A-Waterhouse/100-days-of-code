@@ -1186,3 +1186,52 @@ new simpleParallax(imageElement, {
 finished on video 334
 =================================================================================================
 
+day 42
+14/5/23
+
+fronend and backend
+frontend only on the local browser/client
+backend on servers
+backend can store user enterd data/uploaded files/recommendations depending on users interaction eg amazon homepage/adding items to cart
+
+in backend a programming language is executed on the server and not in browser
+any language can be used depending on if it is suited for the tasks
+python, PHP, c# nodeJS (javascript) are popular choices
+nodeJS is JS outside of the browser
+nodeJS can read+write files, parse incoming requests and send responses
+
+installed nodeJS
+used teminal in vscode to execute my app.js file
+
+created custom server using nodeJS with;
+const http = require("http");
+
+function handleRequest(request, response){
+response.statusCode = 200;
+response.end("<h1>Hello World!</h1>");
+}
+
+const server = http.createServer(handleRequest);
+
+server.listen(3000); //port 3000 used for dev, 80 or 443 is used for real use case
+
+server is running on port 3000 and can be viewed in the browser using 
+localhost:3000
+
+nodejs server is now hosting the page with hello world! on it
+
+control + C stops server from running in the terminal
+
+
+added :
+function handleRequest(request, response) {
+  if (request.url === "/currenttime") {
+    response.statusCode = 200;
+    response.end("<h1>" + new Date().toISOString() + "/<h1>");
+  } else if (request.url === "/") {
+    response.statusCode = 200;
+    response.end("<h1>Hello World!</h1>");
+  }
+}
+
+to see how functions can be run on the server and displayed the current time with the /currenttime address
