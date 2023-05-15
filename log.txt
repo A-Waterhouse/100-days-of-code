@@ -1235,3 +1235,48 @@ function handleRequest(request, response) {
 }
 
 to see how functions can be run on the server and displayed the current time with the /currenttime address
+
+fininshed on video 346
+
+=================================================================================================
+
+day 43
+15/5/23
+
+leared about 3rd party library for server side JS
+express JS is used
+npm (node package manager is used in terminal)
+initialised package.json file and installed express
+
+used express to make same function in the server what was made before, less text used and more structured
+
+
+going to make form and store data on server
+made form by changing hello world string to form html res.send('<form><label>Your Name</label><input type="text"></form>');
+had to quit and restat server and use single quote marks
+will use single quote marks from now on
+
+had to add app.use(express.urlencoded({extended: false})); to make it so the server could understand what was being sent
+now data is sent to the server from the form
+
+text file wil be used to store the data
+made /data/users.json file to store the data
+used const fs = require('fs'); to use the file system package built into js
+used const path = require('path') to make file paths compatible with all systems
+used const filePath = path.join(__dirname, 'data', 'users.json'); to tell server where to store data
+fs.writeFileSync(filePath); runs the command
+
+used const fileData = fs.readFileSync(filePath); to read data already inthe users.json file
+used const existingUsers = JSON.parse(fileData); to convert data into correct language for the server
+used existingUsers.push(): to add item to end of array
+
+user name need to be added backinto the json file but with the correct language so must be converted back to raw data
+  fs.writeFileSync(filePath, JSON.stringify(existingUsers)); stringify is used to save it as text back into the file
+
+username is now stored in the users.json file
+2nd username was added and also stored in the file
+
+old data was preserved and new data was added
+
+finished on video 351
+=================================================================================================
