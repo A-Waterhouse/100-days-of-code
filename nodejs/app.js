@@ -30,6 +30,20 @@ app.post("/store-user", function (req, res) {
   res.send("<h1>Username stored!</h1>");
 });
 
+app.get("/users", function (req, res) {
+  const filePath = path.join(__dirname, "data", "users.json");
+
+  const fileData = fs.readFileSync(filePath);
+  const existingUsers = JSON.parse(fileData);
+  let responseData = "<ul>";
+
+  for (const user of existingUsers) {
+    responseData += "<li>" + user + "</li>";
+  }
+  responseData += "</ul>";
+  res.send(responseData);
+});
+
 app.listen(3000);
 
 // dont need below any more since we are now using express instead

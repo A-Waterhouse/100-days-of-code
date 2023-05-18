@@ -1280,3 +1280,73 @@ old data was preserved and new data was added
 
 finished on video 351
 =================================================================================================
+day 44
+18/5/23
+
+used
+app.get('/users',
+  function (req, res) {
+    const filePath = path.join(__dirname, 'data', 'users.json');
+
+    const fileData = fs.readFileSync(filePath);
+    const existingUsers = JSON.parse(fileData);
+
+    res.send(existingUsers);
+  });
+
+  to view the stored user data as an array on localhost:3000/users
+
+  now want to get The array and see it as html file
+
+  a for loop was added to do this by putting data in unordered list
+  let responseData = "<ul>";
+
+  for (const user of existingUsers) {
+    responseData += "<li>" + user + "</li>";
+  }
+  responseData += "</ul>";
+  res.send(responseData);
+
+user input is now stored and then html reponses are created
+
+installed nodemon to auto start and stop the server/app.js
+
+setup script to run nodemon app.js
+had to move app.js into main directory since i couldnt figure out how to change working dir 
+adjusted app.js file accordingly and now still works
+ will use ****************100 days of code/app.js************** from now on 
+
+ tested and all still working
+
+right clicked on new app.js file and ran terminal so correct directory was used
+
+ ran npm install to install node modules and package.json file
+ 
+ 
+
+ added 
+ const express = require("express");
+const app = express();
+
+app.get("/", function (req, res) {
+  res.send("<h1>Hello World</h1>");
+});
+
+app.listen(3000);
+to downloaded app.js file to start server and displayed hello world
+ran npm start to start nodemon script
+
+renamed old app.js file as node was getting 2 instances running on port 3000
+
+finished on video 359
+=================================================================================================
+
+
+
+
+
+
+
+
+
+
