@@ -1341,10 +1341,90 @@ renamed old app.js file as node was getting 2 instances running on port 3000
 finished on video 359
 =================================================================================================
 
+day 45
+18/5/23
+
+learned about using public folder so the hrefs work again, using
+const app = express();
+
+app.use(express.static('public'));
+
+css files and js files are now stored in the public folder where code will look to see it it can find that file which has been referanced in the html
+
+linked form to the app.js file and made it so data could be posted to the file resaurants.json
+
+had to manually make resaurants.json have [] array brackets in there for it to work correctly
+
+
+installed EJS engine so the created data on the server can now be viewed on the html file
+ used 
+app.set('views', path.join(__dirname, 'views')); // views refers to views folder name
+app.set('view engine', 'ejs'); //view engine is name of the package option
+const fs = require('fs');
+
+set will enable ooptions for the express app
+
+
+renamed the .html files to .ejs so ejs now knows that those are templates
+
+app.get('/', function (req, res) {
+  res.render('index');
+});
+
+is now used to show the data, this is using the ejs engine
+
+logic and dynamic conten can be generated on the server and change the html
+
+added
+<p>We found X restaurants.</p>
+to the resaurants.ejs file, now i want x to be dynamic
+
+<p>We found <%= numberOfRestaurants %> restaurants.</p>
+is added to make that section dynamic
+
+app.get('/restaurants', function (req, res) {
+  res.render('restaurants', { numberOfRestaurants: 2 });
+});
+is added to the app.js file so it can communicate with the ejs file
+ 2 will be changed later 
+
+
+ app.get('/restaurants', function (req, res) {
+  const filePath = path.join(__dirname, 'data', 'restaurants.json');
+  const fileData = fs.readFileSync(filePath);
+  const storedRestaurants = JSON.parse(fileData);
+  res.render('restaurants', { numberOfRestaurants: storedRestaurants.length });
+});
+
+added file info to the function and length is now used to count number of items in array
+
+now number updates when new data is added to share restaurants
+
+info from the array was added to the website using js code in the ejs file
+
+a for loop was used to loop through the json data
+<% for (const restaurant of restaurants) { %>
+
+
+<h2><%= restaurant.name %></h2>
+              <div class="restaurant-meta">
+                <p><%= restaurant.cuisine %></p>
+                <p><%= restaurant.address %></p>
+              </div>
+              <p>
+                <%= restaurant.description %>
+              </p>
 
 
 
+was added to look for the data in the json file name, cuisine and address are titles in the json file
 
+
+ res.render('restaurants', {
+    numberOfRestaurants: storedRestaurants.length,
+    restaurants: storedRestaurants,
+
+stored resaurants was added to the js file so the data was rendered in the ejs
 
 
 
