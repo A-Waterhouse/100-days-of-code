@@ -1426,6 +1426,10 @@ was added to look for the data in the json file name, cuisine and address are ti
 
 stored resaurants was added to the js file so the data was rendered in the ejs
 
+if/else stament was used to show message if there were 0 recommendations, else was the results in the json file
+
+finished on video 365
+=================================================================================================
 
 
 
