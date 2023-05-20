@@ -1431,6 +1431,94 @@ if/else stament was used to show message if there were 0 recommendations, else w
 finished on video 365
 =================================================================================================
 
+day 46 
+20/5/23
+
+used include ejs function to split page up into parts for easier updating and make the html more managageable
+
+made new folder called includes and put in a header.ejs file
+cut and pasted header from reataurants.ejs file into the header.ejs file
+in the restaurant.ejs file used a ejs shortcut to link to the header.ejs file
+<%- %> is used to render information, treats html cade as code not raw text, otherwise raw text is used when = is used instead
+<%- include('includes/header') %>
+added <%- include('includes/draw') %>
+to split the side draw info
+
+<%- include('includes/head') %>
+made one for the head too, but some pages had page specific data so those lines got left in the original file
+
+made one for the restaurant form data
+<%- include('includes/restaurant/restaurant-item', {restaurant: restaurant})%>
+this must include the key from reataurant items and the constant in the curly brackets
+
+ejs syntax isnt understood by vs code, ejs language extension was added
+auto complete is now available
+
+ejs template language was used and enabled the dynamic generated html content on the server
+can also avoid code duplucation and split parts of the html with the include function
+
+<%- renders the data as html content
+<%= just displays raw text
+<% if can also be used
+
+finished html code arrives on the browser, not the ejs code
 
 
+adding a detail page so we can share links with otherwise
+going to change the link button to a shere button
+
+dynamic routes will be used, since I wont know how many items will be added to the list and each one needs a unique ID which wont be know yet
+so shouldnt make a line of code for each potential list item
+
+a dynamic route with a dynamic placeholder which will be encoded into the url will be used
+used 
+
+app.get('/restaurants/:id');
+
+:id is used to make dynamic route
+
+req.params.id..... id must be used here since i used id in the :id part
+
+
+this is used to show same page but with different data, eg the restaurant name
+
+
+full code is
+
+app.get('/restaurants/:id', function (req, res){
+
+ const restaurantId = req.params.id;
+ res.render('restaurant-detail', {rid: restaurantId});
+});
+
+
+<h1>TITLE OF THE RESTAURANT <%= rid %></h1> 
+is added to the restaurant detail page where <%= rid %> is used to change the name dynamically
+
+<a href="/restaurants/r1">View Restaurant</a>
+is added to restaurant items.ejs as a dumm placeholder for the address
+
+all css and script links must be changed to absolute paths by starting them with a "/"
+
+
+must add unique IDs to the restaurants.json file using a 3rd party package
+installed uuid package via terminal
+
+add new const to the app.js
+const uuid = require('uuid');
+to enable use of the uuid package
+
+restaurant.id = uuid.v4(); 
+is added to the app.post('/recommend', function (req, res)
+v4 part will give a unique id
+
+changed <a href="/restaurants/r1">View Restaurant</a>
+in the restaurant-item.ejs file
+
+to  <a href="/restaurants/<%= restaurant.id %> ">View Restaurant</a>
+so i can now access the new id section in the array
+
+finished on video 371
+
+=================================================================================================
 
