@@ -1522,3 +1522,68 @@ finished on video 371
 
 =================================================================================================
 
+day 47
+21/5/23
+
+cahnged app.js to show specific information from the .json file for each restaurant
+app.get('/restaurants/:id', function (req, res) {
+  const restaurantId = req.params.id;
+  const filePath = path.join(__dirname, 'data', 'restaurants.json');
+
+  const fileData = fs.readFileSync(filePath);
+  const storedRestaurants = JSON.parse(fileData);
+  
+  for (const restaurant of storedRestaurants){
+    if(restaurant.id === restaurantId){
+      return res.render('restaurant-detail', { restaurant: restaurant });
+    }
+  }
+});
+
+the for loop was used to look for the information, when it was found the return statement was used
+
+<h1><%= restaurant.name %></h1>
+      <p><%= restaurant.cuisine %> | <%= restaurant.address %></p>
+      <p><%= restaurant.description %></p>
+      <p><a href="<%= restaurant.website %>">View Website</a></p>
+
+was used to display the data from the .json file
+
+if invalid id is entered it should show a 404 not found page instead of timing out
+new page was made using the template named 404.ejs
+
+a response was added after the for loop
+res.render('404');
+
+now if page not found 404 page gets displayed
+
+want to use 404 page for incorrect spellings of page
+
+app.use(function(req,res) {
+  res.render('404');
+});
+
+was added at the bottom after all existing routes have been checked
+
+another error is a serverside error, error 500
+example could be reading or writing to .json file
+can happen when too many people are on site
+
+500.ejs file is made
+
+app.use(function (error, req, res, next) {
+  res.render('500');
+});
+all 4 paramiters must be used, next is used to move on to the next middleware in line
+
+will add correct error staus codes to the site
+instead of showing a 300 or 200 
+
+res.status(404).render('404');
+status is used to show the error code in the dev tools
+
+finsihed on video 376
+=================================================================================================
+
+ 
+
