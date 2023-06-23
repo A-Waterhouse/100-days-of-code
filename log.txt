@@ -1584,6 +1584,43 @@ status is used to show the error code in the dev tools
 
 finsihed on video 376
 =================================================================================================
+day 48
+
+23/6/23
+
+learnt about refactoring code to avoid duplicetion of code/errors keeps the code short and maintainable
+
+made file called resaurant-data to store used functions
+added const resData = require('./util/restaurant-data') to include this file into the app.js file
+
+added 
+module.exports = {
+getStoredResaurants: getStoredResaurants,
+storeRestaurants: storeRestaurants
+};
+to enable the info to be used in other files
+the functions are exported to other files
+2 methods are exported
+
+const restaurants = resData.getStoredResaurants();
+refers to exported objects and calls specific method
+
+had to make sure all folders and paths were correct to make code work
+
+used router built into express
+added new folder called routes and added 2 files, default and restaurants, default for pages like index and about etc and restaurants for restaurant specific files
+
+added
+const express = require('express');
+
+const router = express.Router();
+to enable the use of router in the new default.js file
+module.exports = router; is added to export the configured router object
+
+
+finished on video 379
+
+=================================================================================================
 
  
 
