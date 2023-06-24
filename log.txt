@@ -1622,5 +1622,47 @@ finished on video 379
 
 =================================================================================================
 
- 
+ day 49
+ 24/6/23
+
+added queeries to sort the restaurants
+sort method can be used on the restaurants array using  storedRestaurants.sort();
+sort is executed by the browser, the function will need 2 parameters
+resA, resB are used to compare to one another
+will be sorted by name, alphabetically
+
+  storedRestaurants.sort(function (resA, resB) {
+    if (resA.name>resB.name){
+      return 1
+    }
+    return -1
+  });
+
+  if retuned 1 the 2 items will be flipped, resB will be infront of resA
+  else they will stay the same order
+
+  capital letters come before non caps 
+
+
+added button to manually change order
+
+<form action="/restaurants" method="GET">
+          <input type="hidden" value="asc" name="order">
+        <button class="btn">Change Order</button>
+        </form>
+
+the get method is used to reload the page but with new address http://localhost:3000/restaurants?order=asc value
+will be load same page and hidden from the user
+
+clicking button changes from asc to desc using queery parameters dynamically
+
+finished on video 382
+
+=================================================================================================
+
+
+
+
+
+
 
